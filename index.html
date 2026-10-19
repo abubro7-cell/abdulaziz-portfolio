@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulaziz | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffffff, #eaf0ff);
+            color: #172033;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #70a5ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #477bff;
+            box-shadow: 0 8px 25px #9eb8ff;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        h1 span {
+            color: #477bff;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 35px 25px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px #dce4f5;
+        }
+
+        h2 {
+            color: #315fd0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            text-align: center;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+        }
+
+        .skill, .project-card {
+            padding: 20px;
+            border-radius: 14px;
+            background: #f0f4ff;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project-icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .project-card {
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 11px 24px;
+            border-radius: 25px;
+            background: #477bff;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #172033;
+            color: white;
+            margin-top: 35px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+        /* PORTFOLIO UCHUN ZAMONAVIY TUGMALAR */
+button, .btn, a.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 6px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #4776e6, #8e54e9);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(71, 118, 230, 0.25);
+    transition: all 0.3s ease;
+}
+
+/* Sichqoncha tugmaga kelganda */
+button:hover, .btn:hover, a.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(71, 118, 230, 0.35);
+}
+
+/* Tugma bosilganda */
+button:active, .btn:active, a.btn:active {
+    transform: scale(0.96);
+}
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Bosh sahifa</a>
+       <a href="about.html">Men haqimda</a>
+<a href="skills.html">Ko‘nikmalar</a>
+        <a href="#projects">Loyihalar</a>
+        <a href="#contact">Aloqa</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <img src="men.png.jpg" class="profile-img" alt="Mening rasmim">
+
+        <h1>Salom, men <span>Abdulaziz!</span></h1>
+
+        <p>Kompyuter injiniringi talabasi va IT o‘rganuvchiman.</p>
+
+        <a href="#about" class="btn">Men haqimda</a>
+    </div>
+
+    <section id="about">
+        <h2>Men haqimda</h2>
+        <p>
+            Men IT sohasiga qiziqaman. Hozir dasturlash,
+            veb-sayt yaratish va kiberxavfsizlikni o‘rganmoqdaman.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Mening ko‘nikmalarim</h2>
+
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Veb-sahifa yaratish</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Sayt dizayni va bezash</p>
+            </div>
+
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Dasturlash asoslari</p>
+            </div>
+
+            <div class="skill">
+                <h3>C++</h3>
+                <p>Algoritmlar asoslari</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Mening loyihalarim</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">🌐</div>
+                <h3>Portfolio saytim</h3>
+                <p>HTML va CSS yordamida yaratilgan shaxsiy sayt.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">💻</div>
+                <h3>Dasturlash</h3>
+                <p>Python va C++ bo‘yicha o‘quv loyihalarim.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">🔐</div>
+                <h3>Kiberxavfsizlik</h3>
+                <p>Kiberxavfsizlik asoslarini o‘rganish.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Men bilan aloqa</h2>
+        <p>Men bilan bog‘lanishingiz mumkin.</p>
+        <p>Yo‘nalish: Kompyuter injiniringi</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Abdulaziz. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+</body>
+</html>
